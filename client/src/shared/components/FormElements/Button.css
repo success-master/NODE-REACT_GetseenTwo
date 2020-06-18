@@ -1,0 +1,122 @@
+:root {
+  --default: #e8e8e8;
+  --dark: #262627;
+  --dark--hover: #464647;
+  --danger: #fa5959;
+  --success: #1fae96;
+  --white: white;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #e8e8e8;
+  color: #262627;
+  font-size: 16px;
+  /* line-height: 28px; */
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  /* transition: 0.3s ease; */
+}
+
+.btn:disabled,
+.btn:hover:disabled,
+.btn:active:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+  color: var(--dark);
+}
+
+.btn--default--light {
+  background-color: var(--default);
+  color: var(--dark);
+}
+
+.btn--default--dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+.btn--default--dark:hover {
+  background-color: var(--dark--hover);
+  color: var(--white);
+}
+
+.btn--default--danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+.btn--default--danger:hover {
+  background-color: var(--dark--hover);
+  color: var(--white);
+}
+
+.btn--default--success {
+  background-color: var(--success);
+  color: var(--white);
+}
+.btn--default--success:hover {
+  background-color: var(--dark--hover);
+  color: var(--white);
+}
+
+.btn--default {
+  height: 42px;
+  padding: 6px 20px;
+}
+
+.btn--small {
+  height: 34px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.btn--14px--right {
+  margin-right: 14px;
+}
+.btn--14px--left {
+  margin-left: 14px;
+}
+
+.btn--wide {
+  padding-left: 28px;
+  padding-right: 28px;
+  min-width: 100px;
+}
+
+.btn--auth {
+  width: 100%;
+  text-align: center;
+}
+
+.btn--auth--float {
+  position: absolute;
+  left: auto;
+  top: 20px;
+  right: 20px;
+  bottom: auto;
+}
+
+.btn--notice {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background-color: #fafafa;
+}
+
+.btn--respond--default {
+  margin-left: 10px;
+}

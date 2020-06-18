@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../images/favicon.png.png" rel="app-touch-icon" sizes="76x76" />
+    <link href="../images/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./css/frames.css" />
+    <link rel="icon" href="./css/fav.png" />
+    <title>Share Your Experience</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJHGTVF");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+      .btn11 button {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        color: #333;
+        font-weight: 600;
+        background-color: #fff;
+        font-size: 26px;
+      }
+      .btn11 button:hover {
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+      }
+      .disabled {
+        opacity: 0.3 !important;
+        cursor: default !important;
+      }
+      .inner-wrapper.google {
+        background-color: #4b99ff !important;
+      }
+      .inner-wrapper.facebook {
+        background-color: #33599d !important;
+      }
+      .inner-wrapper.allagent {
+        background-color: #f92a4f !important;
+      }
+      .inner-wrapper.rateragent {
+        background-color: #792f89 !important;
+      }
+      .inner-wrapper.tripadvisor {
+        background-color: #008f1d !important;
+      }
+      .inner-wrapper.yelp {
+        background-color: #ffd100 !important;
+      }
+      .inner-wrapper.checkatrade {
+        background-color: #7cd34a !important;
+      }
+      .inner-wrapper.autotrader {
+        background-color: red !important;
+      }
+      .inner-wrapper.trustpilot {
+        background-color: #007f4e !important;
+      }
+      h1.heading {
+        margin-top: 70px;
+      }
+      .name-heading {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 30px;
+        position: absolute;
+        left: 0;
+        top: -50px;
+        width: 100%;
+      }
+      .name-heading img {
+        width: 35px;
+        vertical-align: bottom;
+        margin-bottom: 5px;
+        margin-left: 14px;
+        position: absolute;
+      }
+      #lnkNo {
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJHGTVF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+      <div class="inner-wrapper" id="pageCtn">
+        <span class="contain">
+          <h1 class="name-heading">
+            <span id="txt-customer-name">Hi </span>
+            <img src="./images/hand.png" alt="#" />
+          </h1>
+          <h1 class="heading">
+            Use <span id="sitePriorityName"></span> <br />to leave your review?
+          </h1>
+          <div class="review-btn btn11">
+            <div class="banner"></div>
+            <button id="btnYes" type="button">Yes</button>
+          </div>
+          <div class="facebook-like-us">
+            <span><b>Like us</b> for exclusive offers</span>
+            <img src="./images/facebook-thumb-icon.png" alt="Seen" />
+          </div>
+          <div class="review-link-col">
+            <a id="lnkNo" href="#">No, use another site</a>
+          </div>
+        </span>
+        <div class="bottom-col">
+          <a href="https://www.getseen.co.uk" target="_blank"
+            ><img src="./images/powered-by-seen.svg" alt="Seen"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $.urlParam = function (name) {
+          var results = new RegExp("[\?&]" + name + "=([^&#]*)").exec(
+            window.location.href
+          );
+          return results[1] || 0;
+        };
+
+        var companyId = $.urlParam("companyId");
+        var inviteId = $.urlParam("inviteId");
+        var sitePriorities = [];
+        var customReviewSites = [];
+        googleLink = "";
+        facebookLink = "";
+        otherLink = "";
+        $("#btnYes").attr("disabled", "disabled");
+        $("#lnkNo").attr("disabled", "disabled");
+        $("#btnYes").addClass("disabled");
+        $("#lnkNo").addClass("disabled");
+
+        function getMobileOperatingSystem() {
+          var userAgent =
+            navigator.userAgent || navigator.vendor || window.opera;
+
+          // Windows Phone must come first because its UA also contains "Android"
+          if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+          }
+
+          if (/android/i.test(userAgent)) {
+            return "Android";
+          }
+
+          // IOS detection from: http://stackoverflow.com/a/9039885/177710
+          if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "IOS";
+          }
+
+          return "unknown";
+        }
+
+        function uriSchemeWithHyperlinkFallback(uri, href) {
+          if (!window.open(uri, "_system", "location=no")) {
+            window.location = href;
+          }
+        }
+
+        function setPageStyles() {
+          for (var i = 0; i < sitePriorities.length; i++) {
+            $("#pageCtn").removeClass(sitePriorities[i].value);
+          }
+          $("#pageCtn").addClass(sitePriorities[0].value);
+          console.log(sitePriorities[0].value);
+          if (sitePriorities[0].value == "facebook") {
+            $(".facebook-like-us").css("display", "table");
+          } else {
+            $(".facebook-like-us").css("display", "none");
+          }
+        }
+
+        var getReviewDataUrl =
+          "https://app.getseen.co.uk/api/review/" + companyId + "/" + inviteId;
+        $.get(getReviewDataUrl, function (response, status) {
+          if (response.code == 0) {
+            if (
+              response.data.customerName &&
+              response.data.customerName.length <= 12
+            ) {
+              $("#txt-customer-name").text("Hi " + response.data.customerName);
+            }
+            sitePriorities = response.data.sitePriorities;
+            customReviewSites = response.data.customReviewSites;
+            if (sitePriorities && sitePriorities.length > 0) {
+              $("#btnYes").removeAttr("disabled");
+              $("#btnYes").removeClass("disabled");
+              googleLink = response.data.google;
+              facebookLink = response.data.facebook;
+              otherLink = response.data.other;
+              facebookHigherPriorityOnIos =
+                response.data.facebookHigherPriorityOnIos;
+              $("#sitePriorityName").text(sitePriorities[0].name);
+              setPageStyles();
+
+              if (
+                getMobileOperatingSystem() == "IOS" &&
+                facebookHigherPriorityOnIos
+              ) {
+                var newSites = [];
+                for (var j = 0; j < sitePriorities.length; j++) {
+                  if (sitePriorities[j].value != "google")
+                    newSites.push(sitePriorities[j]);
+                }
+                sitePriorities = newSites;
+                $("#sitePriorityName").text(sitePriorities[0].name);
+                setPageStyles();
+              }
+
+              if (
+                sitePriorities.length > 1 ||
+                (sitePriorities.length == 1 &&
+                  getMobileOperatingSystem() == "IOS" &&
+                  googleLink)
+              ) {
+                $("#lnkNo").removeAttr("disabled");
+                $("#lnkNo").removeClass("disabled");
+              }
+            }
+          }
+        });
+
+        var url =
+          "https://app.getseen.co.uk/api/review/" + companyId + "/" + inviteId;
+
+        for (var i = 1; i <= 40; i++) {
+          $(".banner").append('<div class="inner-counter' + i + '"></div>');
+        }
+
+        $("#btnYes").click(function () {
+          $(this)
+            .html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>')
+            .css("opacity", "0.5")
+            .css("cursor", "not-allowed")
+            .attr("disabled", true);
+          $(".banner").addClass("banner1");
+          $.post(url, function (response, status) {
+            if (response.code == 0) {
+              setTimeout(function () {
+                $(".btn1")
+                  .html("Yes")
+                  .css("opacity", "1")
+                  .css("cursor", "pointer")
+                  .attr("disabled", false);
+                $(".btn1").parent().addClass("btn11");
+                $(".banner").removeClass("banner1");
+                if (sitePriorities[0].value == "google") {
+                  window.location.href = response.data.profile.links.google;
+                } else if (sitePriorities[0].value == "facebook") {
+                  var facebookLink = response.data.profile.links.facebook;
+                  if (getMobileOperatingSystem() == "IOS") {
+                    fbAppLink =
+                      "fb://page/?id=" +
+                      response.data.profile.location.facebookPageId;
+                  } else {
+                    fbAppLink =
+                      "fb://page/" +
+                      response.data.profile.location.facebookPageId;
+                  }
+                  uriSchemeWithHyperlinkFallback(fbAppLink, facebookLink);
+                } else {
+                  var redirectSites = customReviewSites.filter(function (e) {
+                    return e.value == sitePriorities[0].value;
+                  });
+                  if (redirectSites.length > 0) {
+                    window.location.href = redirectSites[0].url;
+                  }
+                }
+              }, 1000);
+            }
+          });
+        });
+
+        $("#lnkNo").click(function (e) {
+          if ($(e.target).attr("disabled") == "disabled") return;
+
+          var newSites = [];
+
+          if (
+            sitePriorities[0].value == "facebook" &&
+            getMobileOperatingSystem() == "IOS" &&
+            googleLink &&
+            facebookHigherPriorityOnIos
+          ) {
+            newSites.push({ name: "Google", value: "google" });
+          }
+
+          for (var i = 1; i < sitePriorities.length; i++) {
+            if (
+              !(
+                getMobileOperatingSystem() == "IOS" &&
+                googleLink &&
+                sitePriorities[i].value == "google" &&
+                facebookHigherPriorityOnIos
+              )
+            ) {
+              newSites.push(sitePriorities[i]);
+            }
+          }
+          newSites.push(sitePriorities[0]);
+          sitePriorities = newSites;
+          $("#sitePriorityName").text(sitePriorities[0].name);
+          setPageStyles();
+        });
+      });
+    </script>
+  </body>
+</html>

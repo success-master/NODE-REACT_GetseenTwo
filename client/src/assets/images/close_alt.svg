@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>button/close_alt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11.4483173,5.48957877 L7.72986779,5.48957877 L7.72986779,1.6021088 C7.72986779,1.12508384 7.35983042,0.738226587 6.90354568,0.738226587 L6.07722356,0.738226587 C5.62093881,0.738226587 5.25090144,1.12508384 5.25090144,1.6021088 L5.25090144,5.48957877 L1.5324519,5.48957877 C1.07616715,5.48957877 0.706129779,5.87643603 0.706129779,6.35346099 L0.706129779,7.21734321 C0.706129779,7.69436817 1.07616715,8.08122542 1.5324519,8.08122542 L5.25090144,8.08122542 L5.25090144,11.9686954 C5.25090144,12.4457204 5.62093881,12.8325776 6.07722356,12.8325776 L6.90354568,12.8325776 C7.35983042,12.8325776 7.72986779,12.4457204 7.72986779,11.9686954 L7.72986779,8.08122542 L11.4483173,8.08122542 C11.9046021,8.08122542 12.2746395,7.69436817 12.2746395,7.21734321 L12.2746395,6.35346099 C12.2746395,5.87643603 11.9046021,5.48957877 11.4483173,5.48957877 Z" id="path-1"></path>
+    </defs>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="status/default_message_sent" transform="translate(-325.000000, -15.000000)">
+            <g id="App-Status-Notification">
+                <g id="modal/modal">
+                    <g id="Group">
+                        <g id="button/close_alt" transform="translate(320.541667, 10.434783)">
+                            <g id="button/modal/close">
+                                <g id="button/close_button">
+                                    <g id="Alt-Close-Button">
+                                        <g id="Navbar-Alt">
+                                            <g id="Group">
+                                                <g id="button/plus">
+                                                    <g id="Navbar-Inbox-Add-Button">
+                                                        <g id="Navbar-Inbox-Button">
+                                                            <g id="inbox" transform="translate(10.173385, 9.436718) rotate(-315.000000) translate(-10.173385, -9.436718) translate(3.673385, 2.936718)">
+                                                                <mask id="mask-2" fill="white">
+                                                                    <use xlink:href="#path-1"></use>
+                                                                </mask>
+                                                                <g id="plus" fill-rule="nonzero"></g>
+                                                                <g id="brand/grey_ACTIVE" mask="url(#mask-2)" fill="#B9BDC2">
+                                                                    <g transform="translate(-1.442308, -1.507867)" id="Brand-Grey">
+                                                                        <rect x="0" y="0" width="15.8653846" height="16.5865385" rx="5"></rect>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

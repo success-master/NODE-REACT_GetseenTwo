@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>inbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.7379808,6.30108172 L9.27584135,6.30108172 L9.27584135,1.83894228 C9.27584135,1.29140058 8.8317965,0.847355735 8.28425481,0.847355735 L7.29266827,0.847355735 C6.74512657,0.847355735 6.30108172,1.29140058 6.30108172,1.83894228 L6.30108172,6.30108172 L1.83894228,6.30108172 C1.29140058,6.30108172 0.847355735,6.74512657 0.847355735,7.29266827 L0.847355735,8.28425481 C0.847355735,8.8317965 1.29140058,9.27584135 1.83894228,9.27584135 L6.30108172,9.27584135 L6.30108172,13.7379808 C6.30108172,14.2855225 6.74512657,14.7295673 7.29266827,14.7295673 L8.28425481,14.7295673 C8.8317965,14.7295673 9.27584135,14.2855225 9.27584135,13.7379808 L9.27584135,9.27584135 L13.7379808,9.27584135 C14.2855225,9.27584135 14.7295673,8.8317965 14.7295673,8.28425481 L14.7295673,7.29266827 C14.7295673,6.74512657 14.2855225,6.30108172 13.7379808,6.30108172 Z" id="path-1"></path>
+    </defs>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/close_button" transform="translate(-9.000000, -9.000000)">
+            <g id="Alt-Close-Button">
+                <g id="Navbar-Alt">
+                    <g id="Group">
+                        <g id="button/plus">
+                            <g id="Navbar-Inbox-Add-Button">
+                                <g id="Navbar-Inbox-Button">
+                                    <g id="inbox" transform="translate(15.000000, 14.646447) rotate(-315.000000) translate(-15.000000, -14.646447) translate(7.500000, 7.146447)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="plus" fill-rule="nonzero"></g>
+                                        <g id="brand/primary" mask="url(#mask-2)" fill="#111112" fill-opacity="0.99">
+                                            <g transform="translate(-1.730769, -1.730769)" id="Rectangle">
+                                                <rect x="0" y="0" width="19.0384615" height="19.0384615" rx="9.51923077"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

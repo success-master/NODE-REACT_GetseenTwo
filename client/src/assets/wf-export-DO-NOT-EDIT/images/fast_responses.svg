@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="18px" viewBox="0 0 12 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>envelope-open</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.2305479,6.77370228 L10.5293867,6.77370228 L11.8956732,2.61069773 C12.023963,2.12319642 11.6551298,1.64210961 11.1515923,1.64210961 L6.53315888,1.64210961 C6.14828943,1.64210961 5.82115039,1.92755445 5.76983447,2.30921666 L4.74351593,10.0066057 C4.68257827,10.468449 5.04178976,10.8789764 5.50684034,10.8789764 L9.31384066,10.8789764 L7.83530052,17.1170688 C7.71983968,17.6045701 8.09188015,18.0632062 8.5825887,18.0632062 C8.85199732,18.0632062 9.10857695,17.9220874 9.24969575,17.6783367 L14.8944477,7.92831064 C15.1927215,7.41835861 14.8238883,6.77370228 14.2305479,6.77370228 Z" id="path-1"></path>
+    </defs>
+    <g id="Brisk---MVP---Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plus-UI---Empty-State---Default" transform="translate(-109.000000, -161.000000)">
+            <g id="components/app/select_card_icon-copy" transform="translate(80.000000, 135.000000)">
+                <g id="channel/connect_channel/SMS-Copy-3">
+                    <g id="channel/connect_channel/SMS">
+                        <g id="connect_channel_template">
+                            <g id="card/template_card">
+                                <g id="channel/facebook_messenger" transform="translate(15.000000, 15.000000)">
+                                    <g id="bolt" transform="translate(10.147342, 10.147342)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g fill-rule="nonzero"></g>
+                                        <g id="brand/primary" mask="url(#mask-2)" fill="#111112" fill-opacity="0.99" fill-rule="evenodd">
+                                            <rect id="Rectangle" x="0" y="0" width="19.7053158" height="19.7053158" rx="9.85265789"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

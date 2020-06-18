@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>file-alt</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.6210938,9.45312499 C21.7734375,9.33203124 21.9999999,9.44531249 21.9999999,9.63671874 L21.9999999,17.625 C21.9999999,18.6601563 21.1601563,19.5 20.125,19.5 L3.87499996,19.5 C2.8398437,19.5 1.99999995,18.6601563 1.99999995,17.625 L1.99999995,9.64062499 C1.99999995,9.44531249 2.2226562,9.33593749 2.3789062,9.45703124 C3.25390621,10.1367187 4.41406246,11 8.39843748,13.8945313 C9.22265624,14.4960938 10.6132812,15.7617188 11.9999999,15.7539063 C13.3945313,15.765625 14.8125,14.4726563 15.6054688,13.8945313 C19.5898438,11 20.7460938,10.1328125 21.6210938,9.45312499 Z M11.9999999,14.5 C12.90625,14.515625 14.2109375,13.359375 14.8671875,12.8828125 C20.0507813,9.12109374 20.4453125,8.79296873 21.640625,7.85546873 C21.8671875,7.67968748 21.9999999,7.40624998 21.9999999,7.11718748 L21.9999999,6.37499997 C21.9999999,5.33984372 21.1601563,4.49999996 20.125,4.49999996 L3.87499996,4.49999996 C2.8398437,4.49999996 1.99999995,5.33984372 1.99999995,6.37499997 L1.99999995,7.11718748 C1.99999995,7.40624998 2.13281245,7.67578123 2.35937495,7.85546873 C3.55468746,8.78906248 3.94921871,9.12109374 9.13281249,12.8828125 C9.78906249,13.359375 11.09375,14.515625 11.9999999,14.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Brisk---MVP---Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="Manage-Members-UI---Empty-State---Default" transform="translate(-105.000000, -427.000000)">
+            <g id="Group" transform="translate(80.000000, 100.000000)">
+                <g id="card/members/invited_member_card" transform="translate(0.000000, 300.000000)">
+                    <g id="card/members/member_card-copy-3">
+                        <g id="Manage-Members">
+                            <g id="card/template_card">
+                                <g id="channel/universal_card_icon" transform="translate(15.000000, 15.000000)">
+                                    <g id="Placeholder-Image">
+                                        <g id="file-alt">
+                                            <g id="envelope" transform="translate(8.000000, 8.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g fill-rule="nonzero"></g>
+                                                <g id="brand/primary" mask="url(#mask-2)" fill="#111112" fill-opacity="0.99" fill-rule="evenodd">
+                                                    <rect id="Rectangle" x="0" y="0" width="24" height="24" rx="10"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

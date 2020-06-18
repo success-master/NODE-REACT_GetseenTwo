@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>google</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.323125,10.6 L13.7675,7.70437499 L10.9890625,7.70437499 L10.9890625,5.82531248 C10.9890625,5.03312498 11.3771875,4.26093747 12.6215625,4.26093747 L13.8846875,4.26093747 L13.8846875,1.79562496 C13.8846875,1.79562496 12.7384375,1.59999996 11.6425,1.59999996 C9.354375,1.59999996 7.85874999,2.98687497 7.85874999,5.49749998 L7.85874999,7.70437499 L5.31531248,7.70437499 L5.31531248,10.6 L7.85874999,10.6 L7.85874999,17.6 L10.9890625,17.6 L10.9890625,10.6 L13.323125,10.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Brisk---MVP---Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Connect-UI---Connection-Set-Up---Default-Copy" transform="translate(-995.000000, -27.000000)">
+            <g id="Group-6" transform="translate(983.000000, 20.000000)">
+                <g id="Group-5" transform="translate(4.500000, 3.000000)">
+                    <g id="facebook-f" transform="translate(2.400000, 2.400000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g fill-rule="nonzero"></g>
+                        <g id="brand/white" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                            <rect id="Rectangle-Copy-10" x="0" y="0" width="19.2" height="19.2" rx="9.6"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

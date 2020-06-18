@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Apple Message Channel Indicator</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.7936478%" y1="93.361933%" x2="50.7936478%" y2="12.4104664%" id="linearGradient-1">
+            <stop stop-color="#0CBD2A" offset="0%"></stop>
+            <stop stop-color="#5BF675" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="channel/connect/sms">
+            <g id="Apple-Message-Channel-Indicator">
+                <rect id="Button-Background" fill="url(#linearGradient-1)" x="0" y="0" width="40" height="40" rx="10"></rect>
+                <path d="M20,10 C13.9248826,10 9,14.1645534 9,19.3017486 C9.00540773,22.5656653 11.0334625,25.5883899 14.3439479,27.266663 C13.910474,28.2518738 13.2603552,29.1757376 12.4205112,30 C14.0491691,29.7097441 15.5780242,29.0999862 16.888083,28.2181847 C17.8982081,28.4720048 18.9462231,28.6017699 20,28.6035017 C26.0751193,28.6034611 31,24.4389457 31,19.3017486 C31,14.1645532 26.0751171,10 20,10 L20,10 Z" id="path922" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
